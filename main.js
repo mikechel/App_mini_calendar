@@ -9,12 +9,12 @@ console.log(today);
 
 const weekDays = ["Domingo", "Segunda-Feira", "Terça-Feira", "Quarta-Feira", "Quinta-Feira", "Sexta-Feira", "Sabado"]
 
-const AllMonths = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembreo"]
+const AllMonths = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 
 
 
 
-date.innerHTML = today.getDate();
+date.innerHTML = (today.getDate()<10?"0":"") + today.getDate();
 day.innerHTML = weekDays[today.getDay()];
 month.innerHTML = AllMonths[today.getMonth()];
 year.innerHTML = today.getFullYear();
